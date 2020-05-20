@@ -1,0 +1,59 @@
+/*
+
+	Author: Steven Galvin
+	
+	Date: 05/15/2020
+
+	Purpose: LESS Stylesheet for Forms
+
+*/
+
+// Import branding variables
+
+@import 'branding.less';
+
+form {
+    width: 90%;
+    margin: 0 auto 10px;
+
+    // Sets the structure of form items
+
+    .form-item-structure {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        resize: none;
+    }
+
+    // Sets the skin of form items
+
+    .form-item-skin {
+        border: 1px solid lighten(@brand-black, 80%);
+        border-radius: 5px;
+    }
+}
+
+// Tablet Styles
+
+@media only screen and (min-width: 768px) {
+    section {
+        &:last-of-type {
+            h3, p {
+                text-align: center;
+            }
+        }
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+// Desktop Styles
+
+@media only screen and (min-width: 1024px) {
+    form {
+        width: 55%;
+    }
+}

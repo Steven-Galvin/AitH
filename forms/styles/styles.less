@@ -1,0 +1,277 @@
+/*
+
+	Author: Steven Galvin
+	
+	Date: 04/22/2020
+
+	Purpose: Main LESS Stylesheet. Holds all template styles and imports any style modules
+
+*/
+
+// Import all stylesheets into main
+
+@import 'branding.less';
+@import 'forms.less';
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @brand-heading;
+}
+
+.hidden {
+	display: none;
+}
+
+.main-button {
+	background-color: @brand-red;
+	color: @brand-white;
+	line-height: 2em;
+	width: 95%;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+body {
+	font-family: @brand-body;
+
+	nav, header, main, section, footer {
+		width: 100%;
+	}
+
+	nav {
+		background-color: @brand-black;
+		color: @brand-white;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		div {
+			padding-left: 15px;
+
+			h1 {
+				margin-bottom: 0;
+			}
+
+			p {
+				margin-top: 0;
+				font-family: @brand-heading;
+			}
+		}
+
+		a {
+			font-size: 1.35em;
+			line-height: 2em;
+			color: @brand-white;
+			text-decoration: none;
+			display: block;
+			width: 100%;
+			text-align: center;
+			border-top: 1px solid white;
+		}
+	}
+
+	header {
+		text-align: center;
+		height: 75vw;
+		background-image: url('https://via.placeholder.com/300?text=Hero+image+goes+here');
+		background-position: center;
+		padding: 5px;
+		box-sizing: border-box;
+
+		h2 {
+			margin-top: 20vw;
+		}
+	}
+
+	main {
+		section {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 15px 15px;
+
+			&:last-of-type {
+				padding: 0;
+
+				h3 {
+					padding-top: 15px;
+					padding-left: 15px;
+					margin-bottom: 0;
+				}
+
+				p {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+
+			img {
+				width: 100vw;
+			}
+		}
+	}
+
+	footer {
+		background-color: @brand-black;
+		color: @brand-white;
+		text-align: center;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+}
+
+// Tablet Styles
+
+@media only screen and (min-width: 768px) {
+	html {
+		font-size: 20px;
+	}
+
+	body {
+		nav {
+			flex-wrap: nowrap;
+
+			.hamburger {
+				display: none;
+			}
+
+			#menu-items {
+				display: flex;
+				align-items: center;
+				width: auto;
+
+				a {
+					padding-right: 15px;
+					border: none;
+					font-size: 1.2em;
+				}
+			}
+		}
+
+		header {
+			height: 60vw;
+		}
+
+		main {
+			width: 100vw;
+			display: grid;
+			grid-template-columns: 50vw 50vw;
+			grid-template-rows: auto auto auto;
+
+			section {
+				width: auto;
+				padding: 25px;
+
+				&:first-of-type {
+					grid-column-start: 1;
+					grid-column-end: 2;
+				}
+
+				&:nth-of-type(2) {
+					grid-column-start: 2;
+					grid-column-end: 3;
+				}
+
+				&:nth-of-type(3) {
+					grid-column-start: 1;
+					grid-column-end: 3;
+				}
+
+				&:last-of-type {
+					grid-column-start: 1;
+					grid-column-end: 3;
+
+					.slideshow {
+						height: 60vw;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+	}	
+}
+
+// Desktop Styles
+
+@media only screen and (min-width: 1024px) {
+	html {
+		font-size: 24px;
+	}
+
+	body {
+
+		header {
+			height: 40vw;
+
+			h2 {
+				margin-top: 15vw;
+			}
+		}
+
+		main {
+			grid-template-columns: 65vw 35vw;
+	
+			section {
+				line-height: 1.75em;
+
+				&:first-of-type {
+					grid-column-start: 1;
+					grid-column-end: 2;
+					grid-row-start: 1;
+					grid-row-end: 3;
+					justify-content: flex-start;
+
+					div {
+						position: relative;
+						width: 100%;
+						padding-top: 50%;
+						margin-bottom: 24px;
+						overflow: hidden;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						img {
+							width: 100%;
+							position: absolute;
+							top: -50%;
+							left: 0;
+							right: 0;
+						}
+					}
+				}
+	
+				&:nth-of-type(2) {
+					font-size: 18px;
+					grid-column-start: 2;
+					grid-column-end: 3;
+					grid-row-start: 1; 
+					grid-row-end: 2;
+				}
+	
+				&:nth-of-type(3) {
+					font-size: 20px;
+					grid-column-start: 2;
+					grid-column-end: 3;
+					grid-row-start: 2;
+					grid-row-end: 3;
+				}
+	
+				&:last-of-type {
+					grid-column-start: 1;
+					grid-column-end: 3;
+
+					.slideshow {
+						height: 35vw;
+					}
+				}
+			}
+		}	
+	}
+}
