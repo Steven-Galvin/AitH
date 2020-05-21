@@ -14,7 +14,7 @@
 
 		<meta charset="UTF-8">
 
-		<title>Ace in the Hole: Help Center</title>
+		<title>Ace in the Hole: Registration</title>
 
 		<meta name="author" content="Steven Galvin">
 

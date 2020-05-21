@@ -47,8 +47,6 @@
 		 
 		<main>
 
-            <?php echo $msg; ?>
-
 			<section>
 
 				<h3>Section 1</h3>
