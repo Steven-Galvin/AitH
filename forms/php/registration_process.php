@@ -10,8 +10,19 @@
     $emergencyContactName = $_POST['user-emergency-contact-name'];
     $emergencyContactNumber = $_POST['user-emergency-contact-number'];
     $identity = $_POST['user-identity'];
-    $satEvents = join(", ", $_POST['user-sat-events']);
-    $sunEvents = join(", ", $_POST['user-sun-events']);
+
+    if (isset($_POST['user-sat-events'])) {
+        $satEvents = join(", ", $_POST['user-sat-events']);
+    } else {
+        $satEvents = "None";
+    }
+
+    if (isset($_POST['user-sun-events'])) {
+        $sunEvents = join(", ", $_POST['user-sun-events']);
+    } else {
+        $sunEvents = "None";
+    }
+
     $accommodation = $_POST['user-accommodation'];
 
     $mail = new PHPMailer;
