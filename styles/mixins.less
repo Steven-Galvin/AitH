@@ -1,0 +1,26 @@
+/*
+
+	Author: Steven Galvin
+	
+	Date: 05/25/2020
+
+	Purpose: Holds project mixins
+
+*/
+
+// Import variables
+
+@import 'variables.less';
+
+.mixin-text-outline(@color, @stroke-value, @blur-value) {
+    text-shadow: -@stroke-value -@stroke-value @blur-value @color,  
+                  @stroke-value -@stroke-value @blur-value @color,
+                 -@stroke-value @stroke-value @blur-value @color,
+                  @stroke-value @stroke-value @blur-value @color;
+}
+
+.mixin-flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

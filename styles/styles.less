@@ -1,0 +1,284 @@
+/*
+
+	Author: Steven Galvin
+	
+	Date: 04/22/2020
+
+	Purpose: Main LESS Stylesheet. Holds all template styles and imports any style modules
+
+*/
+
+// Import all stylesheets into main
+
+@import 'variables.less';
+@import 'mixins.less';
+
+@import 'forms.less';
+@import 'headers.less';
+@import 'slideshows.less';
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @brand-heading;
+}
+
+.hidden {
+	display: none;
+}
+
+.main-button {
+	background-color: @brand-red;
+	color: @brand-white;
+	line-height: 2em;
+	width: 95%;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+body {
+	font-family: @brand-body;
+
+	nav, header, main, section, footer {
+		width: 100%;
+	}
+
+	nav {
+		background-color: @brand-black;
+		color: @brand-white;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		div {
+			padding-left: 15px;
+
+			h1 {
+				margin-bottom: 0;
+			}
+
+			p {
+				margin-top: 0;
+				font-family: @brand-heading;
+			}
+		}
+
+		a {
+			font-size: 1.35em;
+			line-height: 2em;
+			color: @brand-white;
+			text-decoration: none;
+			display: block;
+			width: 100%;
+			text-align: center;
+			border-top: 1px solid white;
+		}
+	}
+
+	header {
+		min-height: 75vw;
+		background-image: url('https://via.placeholder.com/300?text=Hero+image+goes+here');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 5px;
+		box-sizing: border-box;
+		position: relative;
+		.mixin-flex-center();
+
+		h2 {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			min-height: 100%;
+			background-color: rgba(@brand-black, .35);
+			color: @brand-white;
+			.mixin-flex-center();
+			text-align: center;
+		}
+	}
+
+	main {
+		section {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 15px 15px;
+
+			&:last-of-type {
+				padding: 0;
+
+				h3 {
+					padding: 15px 15px 0;
+				}
+
+				p {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+
+			img {
+				width: 100vw;
+			}
+		}
+	}
+
+	footer {
+		background-color: @brand-black;
+		color: @brand-white;
+		text-align: center;
+		padding: 10px;
+		box-sizing: border-box;
+
+		h4 {
+			margin-bottom: 0;
+		}
+
+		p {
+			margin-top: 0;
+			font-size: .7rem;
+			font-family: @brand-heading;
+		}
+	}
+}
+
+// Tablet Styles
+
+@media only screen and (min-width: 768px) {
+	html {
+		font-size: 20px;
+	}
+
+	body {
+		nav {
+			flex-wrap: nowrap;
+
+			.hamburger {
+				display: none;
+			}
+
+			#menu-items {
+				display: flex;
+				align-items: center;
+				width: auto;
+
+				a {
+					padding-right: 15px;
+					border: none;
+					font-size: 1.2em;
+				}
+			}
+		}
+
+		header {
+			min-height: 60vw;
+		}
+
+		main {
+			width: 100vw;
+			display: grid;
+			grid-template-columns: 50vw 50vw;
+			grid-template-rows: auto auto auto;
+
+			section {
+				width: auto;
+				padding: 25px;
+
+				&:first-of-type {
+					grid-column-start: 1;
+					grid-column-end: 2;
+				}
+
+				&:nth-of-type(2) {
+					grid-column-start: 2;
+					grid-column-end: 3;
+				}
+
+				&:nth-of-type(3) {
+					grid-column-start: 1;
+					grid-column-end: 3;
+				}
+
+				&:last-of-type {
+					grid-column-start: 1;
+					grid-column-end: 3;
+				}
+			}
+		}
+	}	
+}
+
+// Desktop Styles
+
+@media only screen and (min-width: 1024px) {
+	html {
+		font-size: 24px;
+	}
+
+	body {
+
+		header {
+			min-height: 40vw;
+		}
+
+		main {
+			grid-template-columns: 65vw 35vw;
+	
+			section {
+				line-height: 1.75em;
+
+				&:first-of-type {
+					grid-column-start: 1;
+					grid-column-end: 2;
+					grid-row-start: 1;
+					grid-row-end: 3;
+					justify-content: flex-start;
+
+					div {
+						position: relative;
+						width: 100%;
+						padding-top: 50%;
+						margin-bottom: 24px;
+						overflow: hidden;
+						.mixin-flex-center();
+
+						img {
+							width: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+						}
+					}
+				}
+	
+				&:nth-of-type(2) {
+					font-size: 18px;
+					grid-column-start: 2;
+					grid-column-end: 3;
+					grid-row-start: 1; 
+					grid-row-end: 2;
+				}
+	
+				&:nth-of-type(3) {
+					font-size: 20px;
+					grid-column-start: 2;
+					grid-column-end: 3;
+					grid-row-start: 2;
+					grid-row-end: 3;
+				}
+	
+				&:last-of-type {
+					grid-column-start: 1;
+					grid-column-end: 3;
+				}
+			}
+		}	
+	}
+}
