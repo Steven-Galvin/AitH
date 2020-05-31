@@ -1,0 +1,41 @@
+/*
+
+	Author: Steven Galvin
+	
+	Date: 05/29/2020
+
+	Purpose: About Page LESS Stylesheet
+
+*/
+
+@import 'variables.less';
+@import 'mixins.less';
+
+table {
+    width: 100%;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+
+    tr:not(:first-of-type) {
+        border-top: 1px solid lighten(@brand-black, 25%);
+    }
+
+    th {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    td {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #about-section {
+        div {
+            padding-top: 0;
+            display: block;
+        }
+    }
+}

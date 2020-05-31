@@ -1,0 +1,52 @@
+/*
+
+	Author: Steven Galvin
+	
+	Date: 05/28/2020
+
+	Purpose: Help Center LESS Stylesheet
+
+*/
+
+@import 'variables.less';
+@import 'mixins.less';
+
+.mid-priority {
+    display: none;
+}
+
+#faq-section {
+    display: block;
+}
+
+#faq-container, #detail-container {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+
+    li {
+        font-weight: bold;
+        line-height: 2.5em;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .faq-answer, .detail-description {
+        display: none;
+
+        li {
+            font-weight: normal;
+            line-height: 1em;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mid-priority {
+        display: block;
+    }
+
+    #course-details-section {
+    }
+}

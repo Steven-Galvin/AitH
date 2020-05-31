@@ -32,12 +32,18 @@
 
 		<link rel="stylesheet/less" type="text/css" href="../styles/styles.less">
 
+		<link rel="stylesheet/less" type="text/css" href="../styles/about.less">
+
 		<script src="../scripts/jquery.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 	</head>
 
 	<body>
+		<!-- Embed Facebook Page -->
+
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
 
         <?php include '../includes/nav.html.php'; ?>
 
@@ -47,48 +53,96 @@
 		 
 		<main>
 
-			<section>
+			<section id="about-section">
 
-				<h3>Section 1</h3>
+				<h3>About the Event</h3>
 				
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto assumenda, ducimus, molestiae suscipit consectetur natus veritatis minus accusamus a, tempora dolorum iste fugiat temporibus eveniet incidunt! Ullam rerum expedita ut?</p>
+				<p>
+					The Annual Ace in the Hole Multisport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation.
+				</p>
 
-				<div class="hidden">
-					<img src="https://via.placeholder.com/300?text=Image+or+slideshow+goes+here+on+desktop+only" alt="Placeholder">
+				<p>
+					There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!
+				</p>
+
+				<div id="starting-times-container">
+					<h3>Starting Times</h3>
+
+					<table>
+						<tr>
+							<th>Saturday</th>
+							<th>Sunday</th>
+						</tr>
+						<tr>
+							<td>
+								Long Course Triathlon
+								<br>
+								7:00 AM
+							</td>
+							<td>
+								Sprint Triathlon
+								<br>
+								8:00 AM
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Olympic Triathlon
+								<br>
+								7:30 AM
+							</td>
+							<td>
+								Try-a-Tri
+								<br>
+								8:20 AM
+							</td>
+						</tr>
+						<tr>
+							<td>
+								10K
+								<br>
+								7:15 AM
+							</td>
+							<td>
+								Splash n Dash
+								<br>
+								12:00 PM
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Half Marathon
+								<br>
+								7:15 AM
+							</td>
+							<td></td>
+						</tr>
+					</table>
 				</div>
 
-				<button class="main-button">Go to page</button>
+				<button class="main-button" onclick="location.href='<?php echo SITE_ROOT; ?>/registration';">Click here to get registered!</button>
 
 			</section>
 
 			<section>
 
-				<h3>Section 2</h3>
+				<h3 hidden>Twitter Feed</h3>
 
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias repudiandae ratione vel, dolores voluptatum pariatur rem tempore et delectus dolore nesciunt debitis dolorem impedit sit alias officia, quibusdam eius!</p>
+				<a class="twitter-timeline" height="350px" data-lang="en" data-theme="dark" href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw">Tweets by pcccas222</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-				<button class="main-button">Go to page</button>
+				<br>
 
-			</section>
+				<h3 hidden>Facebook Feed</h3>
 
-			<section>
-
-				<h3>Section 3</h3>
-
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt, distinctio quo dolorem placeat consequatur autem repellat tenetur, corporis laboriosam reprehenderit aut aliquid, quod eius atque beatae ex. Nesciunt, ipsum!</p>
-
-				<button class="main-button">Go to page</button>
+				<div class="fb-page" height="350px" data-href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/?ref=page_internal" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Cas222Aceinthehole-110661963841617/?ref=page_internal" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/?ref=page_internal">Cas222Aceinthehole</a></blockquote></div>
 
 			</section>
 
-			<section>
+			<section hidden>
 
-				<h3>Section 4</h3>
+			</section>
 
-				<div class="slideshow">
-					<img src="https://via.placeholder.com/300?text=Form+or+slideshow+goes+here" alt="Placeholder">
-				</div>
-
+			<section hidden>
 			</section>
 
 		</main>

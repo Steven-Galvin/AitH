@@ -12,11 +12,15 @@
 
 import { hamburgerModule } from './modules/hamburger.js';
 import { slideshowModule } from './modules/slideshow.js';
+import { toggleFAQ, toggleCourseDetails } from './modules/toggleItems.js';
 
-$(document).ready(function() {
+
+$(document).ready(function () {
 
 	hamburgerModule();
 	slideshowModule();
+	toggleFAQ();
+	toggleCourseDetails();
 
 });
 
