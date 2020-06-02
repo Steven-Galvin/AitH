@@ -1,0 +1,29 @@
+/*
+
+	Author: Steven Galvin
+	
+	Date: 05/29/2020
+
+	Purpose: Buttons LESS Stylesheet
+
+*/
+
+@import 'variables.less';
+@import 'mixins.less';
+
+.main-button {
+    background-color: @brand-red;
+    cursor: pointer;
+	color: @brand-white;
+	line-height: 2em;
+	width: 95%;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	margin-right: auto;
+    margin-left: auto;
+    
+    &:hover {
+        .mixin-hover-dark(background-color, @brand-red, 15%);
+    }
+}
