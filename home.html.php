@@ -57,7 +57,7 @@
 					<img src="images/ace8.jpg" alt="Running smiling while she leads the pack">
 				</div>
 
-				<button class="main-button">Learn About Us!</button>
+				<button class="main-button" onclick="location.href='<?php echo SITE_ROOT; ?>/about';">Learn About Us!</button>
 
 			</section>
 
@@ -67,7 +67,7 @@
 
 				<p>Are you interested in signing up as an athlete or a volunteer? Check out our registration page for more information!</p>
 
-				<button class="main-button">Get Registered!</button>
+				<button class="main-button" onclick="location.href='<?php echo SITE_ROOT; ?>/registration';">Get Registered!</button>
 
 			</section>
 
@@ -77,7 +77,7 @@
 
 				<p>Looking for more information? You can find frequently asked questions at our Help Center. If you have any questions or comments, you can fill out the form and let us know.</p>
 
-				<button class="main-button">Visit the Help Center</button>
+				<button class="main-button" onclick="location.href='<?php echo SITE_ROOT; ?>/help';">Visit the Help Center</button>
 
 			</section>
 

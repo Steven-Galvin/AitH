@@ -32,6 +32,8 @@
 
 		<link rel="stylesheet/less" type="text/css" href="../styles/styles.less">
 
+		<link rel="stylesheet/less" type="text/css" href="../styles/success.less">
+
 		<script src="../scripts/jquery.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
@@ -47,11 +49,11 @@
 		 
 		<main>
 
-            <section>
+            <section class="success-section">
 
 				<h3>Form Submitted</h3>
 				
-				<p>Thank you for registering for our events! Please check out the <a href="<?php echo SITE_ROOT; ?>/help">Help Center</a> for more information.</p>
+				<p>Thank you, <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?>, for getting registered with our events! Please check out the <a href="<?php echo SITE_ROOT; ?>/help">Help Center</a> for more information.</p>
                 
                 <ul>
                     Our records show you submitted the following:
@@ -65,8 +67,9 @@
                     <li>Saturday Events Registered For: <?php echo htmlspecialchars($satEvents, ENT_QUOTES, 'UTF-8'); ?></li>
                     <li>Sunday Events Registered For: <?php echo htmlspecialchars($sunEvents, ENT_QUOTES, 'UTF-8'); ?></li>
                     <li>Special Accommodations: <?php echo htmlspecialchars($accommodation, ENT_QUOTES, 'UTF-8'); ?></li>
-                </ul>
-
+				</ul>
+				
+				<button class="main-button" onclick="location.href='<?php echo SITE_ROOT; ?>';">Return to Home Page</button>
 			</section>
 
 		</main>

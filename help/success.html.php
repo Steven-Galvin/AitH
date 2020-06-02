@@ -32,6 +32,8 @@
 
 		<link rel="stylesheet/less" type="text/css" href="../styles/styles.less">
 
+		<link rel="stylesheet/less" type="text/css" href="../styles/success.less">
+
 		<script src="../scripts/jquery.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
@@ -47,11 +49,11 @@
 		 
 		<main>
 
-            <section>
+            <section class="success-section">
 
 				<h3>Form Submitted</h3>
 				
-				<p>Thank you for reaching out to us. Your input is valuable to us and we will reach out to you as soon as we can.</p>
+				<p>Thank you for reaching out to us, <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?>. Your input is valuable to us and we will reach out to you as soon as we can.</p>
                 
                 <ul>
                     Our records show you submitted the following:
@@ -61,6 +63,7 @@
                     <li>Question or Comment: <?php echo htmlspecialchars($comment, ENT_QUOTES, 'UTF-8'); ?></li>
                 </ul>
 
+				<button class="main-button" onclick="location.href='<?php echo SITE_ROOT; ?>';">Return to Home Page</button>
 			</section>
 
 		</main>

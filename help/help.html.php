@@ -81,101 +81,105 @@
 
 			</section>
 
-			<section id="faq-section">
+			<section>
 
-				<h3>Frequently Asked Questions</h3>
+				<div id="faq-section">
 
-				<ul id="faq-container">
-					<li class="faq-question">What are the Rules?</li>
-					<div class="faq-answer">We currently adhere to the USAT Rules for Triathlon & Duathlon. Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.</div>
+					<h3>Frequently Asked Questions</h3>
 
-					<li class="faq-question">Can I use a personal music device while cycling?</li>
-					<div class="faq-answer">Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</div>
+					<ul id="faq-container">
+						<li class="faq-question">What are the Rules?</li>
+						<div class="faq-answer">We currently adhere to the USAT Rules for Triathlon & Duathlon. Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.</div>
 
-					<li class="faq-question">Can I use a personal music device while running?</li>
-					<div class="faq-answer">
-						During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.
-						<ul>
-							<li>If you chose to use a personal music device, you must always keep one ear open for instructions so only one ear-bud can be used at any time. In addition, if you opt to use music, you will not be eligible for awards, points and rankings. So as an athlete, you have to make a choice - music or awards/points/rankings.</li>
-							<li>If you are using a personal music devise with two earbuds, you will be immediately disqualified. Trust us, we don't want to have to enforce a disqualification but in order to assure the safety of all athletes, this is a very important rule.</li>
-							<li>We also request that if you chose to use a personal music device that you keep the volume to a minimum to assure all instructions can be heard.</li>
-						</ul>
-					</div>
+						<li class="faq-question">Can I use a personal music device while cycling?</li>
+						<div class="faq-answer">Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</div>
 
-					<li class="faq-question">Do I need to wear a wetsuit?</li>
-					<div class="faq-answer">No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor.</div>
+						<li class="faq-question">Can I use a personal music device while running?</li>
+						<div class="faq-answer">
+							During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.
+							<ul>
+								<li>If you chose to use a personal music device, you must always keep one ear open for instructions so only one ear-bud can be used at any time. In addition, if you opt to use music, you will not be eligible for awards, points and rankings. So as an athlete, you have to make a choice - music or awards/points/rankings.</li>
+								<li>If you are using a personal music devise with two earbuds, you will be immediately disqualified. Trust us, we don't want to have to enforce a disqualification but in order to assure the safety of all athletes, this is a very important rule.</li>
+								<li>We also request that if you chose to use a personal music device that you keep the volume to a minimum to assure all instructions can be heard.</li>
+							</ul>
+						</div>
 
-					<li class="faq-question">Do I have to use a road or racing bike?</li>
-					<div class="faq-answer">No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</div>
+						<li class="faq-question">Do I need to wear a wetsuit?</li>
+						<div class="faq-answer">No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor.</div>
 
-				</ul>
+						<li class="faq-question">Do I have to use a road or racing bike?</li>
+						<div class="faq-answer">No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</div>
 
-			</section>
+					</ul>
 
-			<section id="course-details-section" class="mid-priority">
+				</div>
 
-				<h3>Course Details</h3>
+				<div id="course-details-section" class="mid-priority">
 
-				<p>
-					Water temperature is expected to be between 62 & 66 degrees. The temperature will be taken on Friday and the morning of the race. Wetsuits are recommended.
-				</p>
+					<h3>Course Details</h3>
 
-				<ul id="detail-container">
-					<li class="detail-title">Long Course SWIM - 1.2mi</li>
-					<div class="detail-description">
-						Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.
-					</div>
+					<p>
+						Water temperature is expected to be between 62 & 66 degrees. The temperature will be taken on Friday and the morning of the race. Wetsuits are recommended.
+					</p>
 
-					<li class="detail-title">Long Course BIKE - 58 Miles</li>
-					<div class="detail-description">
-						A scenic point-to-point course that travels over gently rolling hills prior to three hard climbs. The bike course will be marked with large directional signage and there will be course marshals at key intersections to help direct you.
-					</div>
+					<ul id="detail-container">
+						<li class="detail-title">Long Course SWIM - 1.2mi</li>
+						<div class="detail-description">
+							Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.
+						</div>
 
-					<li class="detail-title">Long Course RUN - 13.1mi</li>
-					<div class="detail-description">
-						A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (two hills total with a minimal elevation gain).
-					</div>
+						<li class="detail-title">Long Course BIKE - 58 Miles</li>
+						<div class="detail-description">
+							A scenic point-to-point course that travels over gently rolling hills prior to three hard climbs. The bike course will be marked with large directional signage and there will be course marshals at key intersections to help direct you.
+						</div>
 
-					<li class="detail-title">Olympic SWIM - 1,500 meters</li>
-					<div class="detail-description">
-						Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.
-					</div>
+						<li class="detail-title">Long Course RUN - 13.1mi</li>
+						<div class="detail-description">
+							A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (two hills total with a minimal elevation gain).
+						</div>
 
-					<li class="detail-title">Olympic BIKE - 28mi</li>
-					<div class="detail-description">
-						A scenic point-to-point course that travels over gently rolling hills. The bike course will be marked with large directional signage and course marshals will be present at key intersections.
-					</div>
+						<li class="detail-title">Olympic SWIM - 1,500 meters</li>
+						<div class="detail-description">
+							Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.
+						</div>
 
-					<li class="detail-title">Olympic RUN - 10K</li>
-					<div class="detail-description">
-						A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (one hill total with a minimal elevation gain).
-					</div>
+						<li class="detail-title">Olympic BIKE - 28mi</li>
+						<div class="detail-description">
+							A scenic point-to-point course that travels over gently rolling hills. The bike course will be marked with large directional signage and course marshals will be present at key intersections.
+						</div>
 
-					<li class="detail-title">Sprint</li>
-					<div class="detail-description">
-						Course will offer a 1-loop 1/2 mile swim, the exact same 28 mile Bike Course as the Olympic distance and a 5km run.
-					</div>
+						<li class="detail-title">Olympic RUN - 10K</li>
+						<div class="detail-description">
+							A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (one hill total with a minimal elevation gain).
+						</div>
 
-					<li class="detail-title">Try-A-Tri</li>
-					<div class="detail-description">
-						This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable 1/4 mile distance, (instead of the standard 1/2-mile Sprint distance swim), 10 mile bike ride (vs 12 miles and it's a 2 loop course making it very spectator friendly!) and a flat 2 mile run (vs 3 mile sprint course).
-					</div>
+						<li class="detail-title">Sprint</li>
+						<div class="detail-description">
+							Course will offer a 1-loop 1/2 mile swim, the exact same 28 mile Bike Course as the Olympic distance and a 5km run.
+						</div>
 
-					<li class="detail-title">Half Marathon COURSE</li>
-					<div class="detail-description">
-						Half-Marathon (13.1-miles): Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports & Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified
-					</div>
+						<li class="detail-title">Try-A-Tri</li>
+						<div class="detail-description">
+							This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable 1/4 mile distance, (instead of the standard 1/2-mile Sprint distance swim), 10 mile bike ride (vs 12 miles and it's a 2 loop course making it very spectator friendly!) and a flat 2 mile run (vs 3 mile sprint course).
+						</div>
 
-					<li class="detail-title">10k COURSE</li>
-					<div class="detail-description">
-						The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.
-					</div>
+						<li class="detail-title">Half Marathon COURSE</li>
+						<div class="detail-description">
+							Half-Marathon (13.1-miles): Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports & Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified
+						</div>
 
-					<li class="detail-title">Splash n' Dash</li>
-					<div class="detail-description">
-						Kids event for participants ages 4 to 15. This is a 100 yard swim and a 50 yard dash. It is free if an adult registers for an event otherwise it is $25.
-					</div>
-				</ul>
+						<li class="detail-title">10k COURSE</li>
+						<div class="detail-description">
+							The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.
+						</div>
+
+						<li class="detail-title">Splash n' Dash</li>
+						<div class="detail-description">
+							Kids event for participants ages 4 to 15. This is a 100 yard swim and a 50 yard dash. It is free if an adult registers for an event otherwise it is $25.
+						</div>
+					</ul>
+				</div>
+
 			</section>
 
 			<section hidden>

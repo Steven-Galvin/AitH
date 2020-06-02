@@ -16,6 +16,7 @@
 @import 'forms.less';
 @import 'headers.less';
 @import 'slideshows.less';
+@import 'buttons.less';
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: @brand-heading;
@@ -23,18 +24,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .hidden {
 	display: none;
-}
-
-.main-button {
-	background-color: @brand-red;
-	color: @brand-white;
-	line-height: 2em;
-	width: 95%;
-	border: none;
-	border-radius: 5px;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 body {
@@ -53,6 +42,11 @@ body {
 
 		div {
 			padding-left: 15px;
+			cursor: pointer;
+
+			&:hover {
+				.mixin-hover-dark(color, @brand-white, 20%);
+			}
 
 			h1 {
 				margin-bottom: 0;
@@ -73,6 +67,10 @@ body {
 			width: 100%;
 			text-align: center;
 			border-top: 1px solid white;
+
+			&:hover {
+				.mixin-hover-dark(color, @brand-white, 20%);
+			}
 		}
 	}
 
@@ -143,6 +141,24 @@ body {
 			margin-top: 0;
 			font-size: .7rem;
 			font-family: @brand-heading;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			font-size: .75rem;
+			
+			a {
+				color: @brand-white;
+				text-decoration: none;
+
+				&:hover {
+					.mixin-hover-dark(color, @brand-white, 20%);
+				}
+			}
 		}
 	}
 }

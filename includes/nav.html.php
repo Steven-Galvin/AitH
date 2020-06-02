@@ -1,7 +1,7 @@
 <?php define('SITE_ROOT', '/cas222/AitH/'); ?>
 
 <nav>
-    <div>
+    <div onclick="location.href='<?php echo SITE_ROOT; ?>';">
         <h1>Ace in the Hole</h1>
         <p>Multisport Events<p>
     </div>
